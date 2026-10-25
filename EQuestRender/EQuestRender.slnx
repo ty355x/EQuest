@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../S3DFileLib/S3DFileLib.csproj" Id="0b7e030a-9127-4037-8fc9-d16c8709ef43" />
+  <Project Path="EQuestRender.csproj" Id="3be4dae9-2ffc-4348-9e1c-eda798924234" />
+</Solution>

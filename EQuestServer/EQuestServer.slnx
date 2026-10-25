@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../EQuestLib/EQuestLib.csproj" Id="b8f48ed3-7dfb-4ca5-a790-f84a036c1820" />
+  <Project Path="../EQuestRender/EQuestRender.csproj" Id="3be4dae9-2ffc-4348-9e1c-eda798924234" />
+  <Project Path="../S3DFileLib/S3DFileLib.csproj" Id="0b7e030a-9127-4037-8fc9-d16c8709ef43" />
+  <Project Path="EQuestServer.csproj" Id="7bc333a1-7beb-44f4-843e-11199033e586" />
+</Solution>

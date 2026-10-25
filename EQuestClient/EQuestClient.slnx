@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="../EQuestConfig/EQuestConfig.csproj" Id="dbf5bf19-fa4c-4727-a49f-ebdeb9ce0bd1" />
+  <Project Path="../EQuestLib/EQuestLib.csproj" Id="b8f48ed3-7dfb-4ca5-a790-f84a036c1820" />
+  <Project Path="../EQuestRender/EQuestRender.csproj" Id="3be4dae9-2ffc-4348-9e1c-eda798924234" />
+  <Project Path="../EQuestVR/EQuestVR.csproj" Id="3c436e65-5a9c-44f1-a4e0-804f5dbb80b6" />
+  <Project Path="../S3DFileLib/S3DFileLib.csproj" Id="0b7e030a-9127-4037-8fc9-d16c8709ef43" />
+  <Project Path="EQuestClient.csproj" Id="266dea5a-d686-468a-87a3-ee5f7c3f6582">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+</Solution>

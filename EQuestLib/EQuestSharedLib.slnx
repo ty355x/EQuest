@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../EQuestRender/EQuestRender.csproj" Id="3be4dae9-2ffc-4348-9e1c-eda798924234" />
+  <Project Path="EQuestLib.csproj" Id="b8f48ed3-7dfb-4ca5-a790-f84a036c1820" />
+</Solution>

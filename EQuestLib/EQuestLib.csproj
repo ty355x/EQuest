@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8F48ED3-7DFB-4CA5-A790-F84A036C1820}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EQuestLib</RootNamespace>
+    <AssemblyName>EQuestLib</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collisions\Collision.cs" />
+    <Compile Include="Movement\MobBody.cs" />
+    <Compile Include="Movement\MobMovement.cs" />
+    <Compile Include="Collisions\HitboxCollision.cs" />
+    <Compile Include="Collisions\MeshCollision.cs" />
+    <Compile Include="Collisions\Polygon.cs" />
+    <Compile Include="Collisions\RayCollision.cs" />
+    <Compile Include="Data\ModelInfo.cs" />
+    <Compile Include="Data\RaceListCreator.cs" />
+    <Compile Include="Data\RaceInfo.cs" />
+    <Compile Include="GameData.cs" />
+    <Compile Include="Data\Gender.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="MessageType.cs" />
+    <Compile Include="MobType.cs" />
+    <Compile Include="Movement\MobMoveResult.cs" />
+    <Compile Include="Octrees\CollisionObjectType.cs" />
+    <Compile Include="Octrees\Octree.cs" />
+    <Compile Include="Octrees\OctreeBuilder.cs" />
+    <Compile Include="Octrees\OctreeCollision.cs" />
+    <Compile Include="Octrees\OctreeNode.cs" />
+    <Compile Include="Octrees\PolyCollisionResult.cs" />
+    <Compile Include="PacketOut.cs" />
+    <Compile Include="ClientCommand.cs" />
+    <Compile Include="Data\Races.cs" />
+    <Compile Include="ServerCombatUpdate.cs" />
+    <Compile Include="PlayerCombatUpdate.cs" />
+    <Compile Include="ServerCommand.cs" />
+    <Compile Include="ISocketHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PacketIn.cs" />
+    <Compile Include="EQuestMath.cs" />
+    <Compile Include="Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EQuestRender\EQuestRender.csproj">
+      <Project>{3be4dae9-2ffc-4348-9e1c-eda798924234}</Project>
+      <Name>EQuestRender</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
